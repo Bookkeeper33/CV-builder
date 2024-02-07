@@ -1,0 +1,11 @@
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "endOfLine": "auto",
+    "filepath": "always",
+    "printWidth": 80,
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "trailingComma": "es5"
+}
