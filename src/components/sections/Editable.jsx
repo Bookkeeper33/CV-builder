@@ -1,15 +1,29 @@
-import EditPersonal from "./EditPersonal";
-import EditEducation from "./EditEducation";
+import FormPersonal from "./FormPersonal";
 import Section from "./Section";
+import SectionContent from "./SectionContent";
 
-function Editable() {
+function Editable({
+    details,
+    educationList,
+    onEditEducation,
+    onChangeDetails,
+    onDeleteEducation,
+}) {
     return (
         <div className="flex flex-col gap-y-5 md:w-[450px]">
             <Section title={"Personal detail"}>
-                <EditPersonal />
+                <FormPersonal
+                    details={details}
+                    onChangeDetails={onChangeDetails}
+                />
             </Section>
             <Section title={"Education"}>
-                <EditEducation />
+                <SectionContent
+                    list={educationList}
+                    btnTitle={"Education"}
+                    onSubmit={onEditEducation}
+                    onDelete={onDeleteEducation}
+                />
             </Section>
         </div>
     );

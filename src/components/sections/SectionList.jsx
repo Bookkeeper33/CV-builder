@@ -1,0 +1,17 @@
+function SectionList({ listData, onItemClick }) {
+    return (
+        <>
+            {listData.map((item) => (
+                <button
+                    className="rounded-md border  p-2 text-left text-base font-semibold shadow-sm transition hover:border-sky-300"
+                    key={item.id}
+                    onClick={() => onItemClick(item)}
+                >
+                    {item.school}
+                </button>
+            ))}
+        </>
+    );
+}
+
+export default SectionList;

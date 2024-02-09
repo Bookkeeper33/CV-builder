@@ -21,7 +21,7 @@ function Section({ title, children }) {
                             leaveFrom="transform scale-95 opacity-100"
                             leaveTo="transform scale-100 opacity-0"
                         >
-                            <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
+                            <Disclosure.Panel className="p-4 text-sm text-gray-500">
                                 {children}
                             </Disclosure.Panel>
                         </Transition>
