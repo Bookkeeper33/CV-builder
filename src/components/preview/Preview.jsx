@@ -3,7 +3,7 @@ import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import SectionHeader from "./SectionHeader";
 
-function Preview() {
+function Preview({ details, educationList }) {
     const experience = {
         period: "02/24 - present",
         location: "Kyiv, Ukraine",
@@ -17,17 +17,13 @@ function Preview() {
 
     return (
         <div className=" space-y-7 rounded-sm bg-white shadow-md sm:max-w-3xl">
-            <PersonalInfo
-                info={{
-                    fullName: "John Doe",
-                    email: "test@test.com",
-                    phone: "0665037265",
-                    location: "Kyiv, Ukraine",
-                }}
-            />
+            <PersonalInfo details={details} />
             <div className="px-14">
                 <SectionHeader title={"Education"} />
-                <Education />
+                {educationList.length > 0 &&
+                    educationList.map((item) => (
+                        <Education key={item.id} education={item} />
+                    ))}
             </div>
             <div className="px-14 pb-10">
                 <SectionHeader title={"Professional Experience"} />

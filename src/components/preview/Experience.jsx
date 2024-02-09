@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 function Experience({ experience }) {
     return (
         <div className="mt-5 flex flex-col gap-y-3 sm:flex-row  sm:gap-x-10">
