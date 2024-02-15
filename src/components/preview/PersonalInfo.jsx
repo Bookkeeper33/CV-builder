@@ -1,3 +1,9 @@
+import {
+    EnvelopeIcon,
+    DevicePhoneMobileIcon,
+    MapPinIcon,
+} from "@heroicons/react/20/solid";
+
 function PersonalInfo({ details }) {
     return (
         <div className="space-y-5  bg-sky-900 p-5 text-white">
@@ -7,7 +13,7 @@ function PersonalInfo({ details }) {
             <ul className="flex flex-col  items-center gap-y-2 *:flex *:items-center *:gap-x-1 sm:justify-center sm:gap-x-10 md:flex-row">
                 {details.email && (
                     <li>
-                        <i className="fa-regular fa-envelope text-lg"></i>
+                        <EnvelopeIcon className="h-5 w-5" />
                         <span className="text-base font-semibold">
                             {details.email}
                         </span>
@@ -15,7 +21,7 @@ function PersonalInfo({ details }) {
                 )}
                 {details.phone && (
                     <li>
-                        <i className="fa-solid fa-phone text-lg"></i>
+                        <DevicePhoneMobileIcon className="h-5 w-5" />
                         <span className="text-base font-semibold">
                             {details.phone}
                         </span>
@@ -23,7 +29,7 @@ function PersonalInfo({ details }) {
                 )}
                 {details.address && (
                     <li>
-                        <i className="fa-solid fa-location-dot text-lg"></i>
+                        <MapPinIcon className="h-5 w-5" />
                         <span className="text-base font-semibold">
                             {details.address}
                         </span>
