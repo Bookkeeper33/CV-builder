@@ -1,8 +1,17 @@
-# React + Vite
+# CV Builder Project (TOP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+CV Builder built with React.js and other cool tech as a part of curriculum from TOP. It's your go-to tool for managing personal info, education, and work history with ease and build your job-ready CV.
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
+
+-   HTML/Tailwind
+-   JavaScript
+-   React.js
+-   HeadlessUI
+-   Vite
+
+## Demo
+
+### [live demo](https://cv-builder-bookkeeper33.vercel.app/) :ramen:
