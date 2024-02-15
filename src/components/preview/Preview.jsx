@@ -4,7 +4,7 @@ import PersonalInfo from "./PersonalInfo";
 
 function Preview({ details, educationList, experienceList }) {
     return (
-        <div className="space-y-7 self-start rounded-sm bg-white shadow-md sm:w-[700px] md:max-w-[700px]">
+        <div className="w-full space-y-7 self-start rounded-sm bg-white shadow-md sm:w-[700px] md:max-w-[700px]">
             <PersonalInfo details={details} />
             <div className="px-14">
                 <h2 className="bg-gray-200 px-2 py-1 text-center text-lg font-bold">
