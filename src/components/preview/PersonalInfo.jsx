@@ -4,7 +4,7 @@ function PersonalInfo({ details }) {
             <h1 className="text-center text-4xl font-bold">
                 {details.firstName} {details.lastName}
             </h1>
-            <ul className="flex flex-col items-center gap-y-2 *:flex *:items-center *:gap-x-1 sm:flex-row sm:justify-center sm:gap-x-10">
+            <ul className="flex flex-col  items-center gap-y-2 *:flex *:items-center *:gap-x-1 sm:justify-center sm:gap-x-10 md:flex-row">
                 {details.email && (
                     <li>
                         <i className="fa-regular fa-envelope text-lg"></i>

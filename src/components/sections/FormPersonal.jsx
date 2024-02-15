@@ -14,12 +14,12 @@ function FormPersonal({ details, onChangeDetails }) {
                     autoComplete="given-name"
                     type="text"
                     id="firstName"
-                    placeholder="John"
+                    placeholder="First Name"
                     value={details.firstName}
                     onChange={handleInputChange}
                     name="firstName"
                     required
-                    className="rounded-md border bg-slate-100  p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
+                    className="rounded-md border bg-slate-100  p-2 outline-none placeholder:font-sans placeholder:text-gray-500 focus:ring-2  focus:ring-sky-300"
                 />
             </div>
             <div>
@@ -33,7 +33,7 @@ function FormPersonal({ details, onChangeDetails }) {
                     value={details.lastName}
                     name="lastName"
                     onChange={handleInputChange}
-                    placeholder="Doe"
+                    placeholder="Last Name"
                     className="rounded-md border  bg-slate-100 p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
                 />
             </div>
@@ -48,7 +48,7 @@ function FormPersonal({ details, onChangeDetails }) {
                     value={details.email}
                     name="email"
                     onChange={handleInputChange}
-                    placeholder="test@gmail.com"
+                    placeholder="your-email@mail.com"
                     className="rounded-md border  bg-slate-100 p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
                 />
             </div>
@@ -59,7 +59,7 @@ function FormPersonal({ details, onChangeDetails }) {
                 <input
                     autoComplete="tel"
                     type="tel"
-                    placeholder="+380667276524"
+                    placeholder="Phone number"
                     value={details.phone}
                     name="phone"
                     onChange={handleInputChange}
@@ -73,7 +73,7 @@ function FormPersonal({ details, onChangeDetails }) {
                 </label>
                 <input
                     autoComplete="country-name"
-                    placeholder="London, UK"
+                    placeholder="City, country"
                     value={details.address}
                     name="address"
                     onChange={handleInputChange}

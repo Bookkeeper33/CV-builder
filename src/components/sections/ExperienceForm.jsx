@@ -1,6 +1,6 @@
 import { TrashIcon } from "@heroicons/react/20/solid";
 
-function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
+function ExperienceForm({ formData, onSubmit, onChange, onClick, onDelete }) {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
 
@@ -13,33 +13,35 @@ function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
             onSubmit={onSubmit}
         >
             <div className="flex-col">
-                <label htmlFor="school" className="text-base font-bold">
-                    School/University
+                <label htmlFor="company" className="text-base font-bold">
+                    Company Name
                 </label>
                 <input
                     type="text"
                     className="rounded-md border bg-slate-100  p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
-                    placeholder="Enter school/university"
-                    name="school"
-                    value={formData.school}
+                    placeholder="Enter Company Name"
+                    name="companyName"
+                    value={formData.companyName}
                     onChange={handleInputChange}
-                    id="school"
+                    id="company"
                     required
+                    autoComplete="organization"
                 />
             </div>
             <div className="flex-col">
-                <label htmlFor="degree" className="text-base font-bold">
-                    Degree
+                <label htmlFor="position" className="text-base font-bold">
+                    Position Title
                 </label>
                 <input
-                    id="degree"
+                    id="position"
                     type="text"
                     className="rounded-md border bg-slate-100  p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
-                    placeholder="Enter degree/field of study"
-                    name="degree"
-                    value={formData.degree}
+                    placeholder="Enter Position title"
+                    name="position"
+                    value={formData.position}
                     onChange={handleInputChange}
                     required
+                    autoComplete="organization-title"
                 />
             </div>
             <div className="flex-col">
@@ -59,10 +61,6 @@ function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
             <div className="flex-col">
                 <label htmlFor="endDate" className="text-base font-bold">
                     End Date
-                    <span className="text-sm text-gray-500">
-                        {" "}
-                        (or expected)
-                    </span>
                 </label>
                 <input
                     type="month"
@@ -77,6 +75,9 @@ function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
             <div className="flex-col">
                 <label htmlFor="location" className="text-base font-bold">
                     Location
+                    <span className="text-xs font-semibold text-gray-500">
+                        (optional)
+                    </span>
                 </label>
                 <input
                     type="text"
@@ -86,8 +87,27 @@ function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
                     value={formData.location}
                     onChange={handleInputChange}
                     id="location"
-                    required
                 />
+            </div>
+            <div className="flex-col">
+                <label
+                    htmlFor="responsibilities"
+                    className="text-base font-bold"
+                >
+                    Responsibilities
+                    <span className="text-xs font-semibold text-gray-500">
+                        (optional)
+                    </span>
+                </label>
+                <textarea
+                    name="responsibilities"
+                    className="rounded-md border bg-slate-100  p-2 outline-none placeholder:font-sans placeholder:text-gray-600 focus:ring-2  focus:ring-sky-300"
+                    placeholder="Enter the responsibilities"
+                    value={formData.responsibilities}
+                    onChange={handleInputChange}
+                    id="responsibilities"
+                    rows="5"
+                ></textarea>
             </div>
             <div className="flex-row justify-between">
                 {formData.id && (
@@ -120,4 +140,4 @@ function EducationForm({ formData, onSubmit, onChange, onClick, onDelete }) {
     );
 }
 
-export default EducationForm;
+export default ExperienceForm;

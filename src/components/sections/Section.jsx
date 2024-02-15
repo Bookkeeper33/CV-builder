@@ -3,7 +3,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 function Section({ title, children }) {
     return (
-        <div className="mx-auto w-full max-w-md rounded-lg bg-white  shadow-lg">
+        <div className="mx-auto w-full max-w-md rounded-lg bg-white  shadow-md">
             <Disclosure>
                 {({ open }) => (
                     <>

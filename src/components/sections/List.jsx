@@ -1,4 +1,4 @@
-function SectionList({ listData, onItemClick }) {
+function List({ listData, onItemClick, propName }) {
     return (
         <>
             {listData.map((item) => (
@@ -7,11 +7,11 @@ function SectionList({ listData, onItemClick }) {
                     key={item.id}
                     onClick={() => onItemClick(item)}
                 >
-                    {item.school}
+                    {item[propName]}
                 </button>
             ))}
         </>
     );
 }
 
-export default SectionList;
+export default List;
