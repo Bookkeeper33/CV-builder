@@ -14,4 +14,4 @@ CV Builder built with React.js and other cool tech as a part of curriculum from 
 
 ## Demo
 
-### [live demo](https://cv-builder-bookkeeper33.vercel.app/) :ramen:
+### [live demo](https://builder-cv.vercel.app/) :ramen:
